@@ -205,3 +205,6 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .legal-line{margin:0 0 8px;font-size:12.5px;color:#5b6472;line-height:1.65;border-top:1px solid #E7E3DD;padding-top:14px}
 
 .page-title{font-size:30px;margin:0 0 6px}
+
+.footer-contact{margin:0 0 6px;font-size:13px;color:#4a5a72}
+.footer-contact a{color:#17346F}

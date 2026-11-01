@@ -8,8 +8,10 @@ for f in index.html company.html privacy.html; do
     grep -nE 'data-(zh|en)="[^"]*<[a-zA-Z/]' "$f" | head -3
     fail=1
   fi
-  if grep -qE 'data-(zh|en)="[^"]*&quot;' "$f"; then
-    echo "FAIL $f: data-* 属性里含 &quot; 转义标签"
+  # 只拦“转义后的标签”（&quot; 紧跟 <a / <a href 之类），普通引号文本不算
+  if grep -qE 'data-(zh|en)="[^"]*&quot;[^"]*(mailto:|tel:|href)' "$f"; then
+    echo "FAIL $f: data-* 属性里含转义后的标签"
+    grep -nE 'data-(zh|en)="[^"]*&quot;[^"]*(mailto:|tel:|href)' "$f" | head -2
     fail=1
   fi
   if grep -qE 'PLACEHOLDER|待補|TODO' "$f"; then

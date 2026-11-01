@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BurstKeeper — 本機相簿整理 | by 香港易企鏈存科技有限公司</title>
+<meta name="description" content="BurstKeeper 把同一次拍攝的相似照片並排給你看，由你決定留哪張；重複與相似照片在本機比對，照片不上傳。香港易企鏈存科技有限公司出品。">
+<meta name="theme-color" content="#17346F">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="香港易企鏈存科技有限公司">
+<meta property="og:title" content="BurstKeeper — 本機相簿整理">
+<meta property="og:description" content="同一次拍攝的相似照片並排比較，由你決定留哪張；重複與相似分析全在本機完成，照片不上傳。">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317346F'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='38' font-weight='700' fill='%23fff' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="mark" aria-hidden="true">B</span>
+      <span class="brand-text">
+        <strong>BurstKeeper</strong>
+        <span data-zh="by 香港易企鏈存科技有限公司" data-en="by Hong Kong Yiqiliancun Technology Limited">by 香港易企鏈存科技有限公司</span>
+      </span>
+    </a>
+    <nav class="lang-switch" aria-label="Language">
+      <button type="button" data-lang="zh" class="active" aria-pressed="true">中文</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow" data-zh="Android · 本機整理" data-en="Android · on-device">Android · 本機整理</p>
+        <h1>BurstKeeper</h1>
+        <p class="tagline" data-zh="留下最好的，清理其餘。" data-en="Keep your best. Clear the rest.">留下最好的，清理其餘。</p>
+        <p class="lede" data-zh="把同一次拍攝的相似照片並排放在一起，由你逐張決定留哪張。重複與相似照片的分析全部在這台手機上完成，照片不上傳。" data-en="BurstKeeper puts photos from the same burst side by side so you decide which one to keep. Duplicate and similarity analysis runs entirely on your phone — your photos are never uploaded.">把同一次拍攝的相似照片並排放在一起，由你逐張決定留哪張。重複與相似照片的分析全部在這台手機上完成，照片不上傳。</p>
+        <p class="hero-actions">
+          <a class="btn" href="#features" data-zh="了解功能" data-en="Features">了解功能</a>
+          <a class="btn ghost" href="#company" data-zh="公司資料" data-en="Company">公司資料</a>
+        </p>
+        <p class="muted" data-zh="狀態：內測中，Google Play 即將上線。" data-en="Status: in closed beta, coming to Google Play.">狀態：內測中，Google Play 即將上線。</p>
+      </div>
+      <figure class="shot">
+        <img src="assets/compare.png" alt="BurstKeeper 相似照片並排對比" loading="eager" fetchpriority="high">
+        <figcaption data-zh="同一次拍攝分為一組，逐張選擇" data-en="One burst, one group; one decision per photo">同一次拍攝分為一組，逐張選擇</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <div class="wrap">
+      <h2 data-zh="三件事，做深做透" data-en="Three things, done properly">三件事，做深做透</h2>
+      <p class="section-lead" data-zh="不做全能相簿，只把「刪掉哪張」這一件事做到你敢按下確認。" data-en="Not an all-purpose gallery — we do one thing well enough that you trust the confirm button.">不做全能相簿，只把「刪掉哪張」這一件事做到你敢按下確認。</p>
+      <div class="cards">
+        <article class="card">
+          <span class="num" aria-hidden="true">01</span>
+          <h3 data-zh="完全重複" data-en="Exact duplicates">完全重複</h3>
+          <p data-zh="以完整檔案的 SHA-256 比對，只有位元組完全相同才會成組，跨資料夾也能找到。" data-en="Full-file SHA-256 comparison: files group together only when their bytes are identical, even across folders.">以完整檔案的 SHA-256 比對，只有位元組完全相同才會成組，跨資料夾也能找到。</p>
+        </article>
+        <article class="card">
+          <span class="num" aria-hidden="true">02</span>
+          <h3 data-zh="連拍並排對比" data-en="Burst comparison">連拍並排對比</h3>
+          <p data-zh="依可信拍攝時間與視覺相似度分組，同一次拍攝的照片並排放，逐張標記精選或不選。" data-en="Grouped by trusted capture time and visual similarity, photos from the same burst sit side by side for one-tap decisions.">依可信拍攝時間與視覺相似度分組，同一次拍攝的照片並排放，逐張標記精選或不選。</p>
+        </article>
+        <article class="card">
+          <span class="num" aria-hidden="true">03</span>
+          <h3 data-zh="兩步授權才刪" data-en="Two-step authorisation">兩步授權才刪</h3>
+          <p data-zh="標記只是偏好，不會刪任何東西；只有你在最終確認裡逐張看過並同意，系統才會請求刪除。" data-en="Marking is only a preference — nothing is deleted. Photos are removed only after you review them one by one and agree in the final step.">標記只是偏好，不會刪任何東西；只有你在最終確認裡逐張看過並同意，系統才會請求刪除。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="privacy">
+    <div class="wrap">
+      <h2 data-zh="隱私邊界（說我們做到的）" data-en="What we actually do">隱私邊界（說我們做到的）</h2>
+      <p class="section-lead" data-zh="只寫能兌現的四條；做不到的承諾不寫。" data-en="Four claims we can keep. Nothing we cannot.">只寫能兌現的四條；做不到的承諾不寫。</p>
+      <ul class="checks">
+        <li data-zh="照片、縮圖與分析結果都留在這台手機上，不上傳。" data-en="Photos, thumbnails and analysis stay on your phone; nothing is uploaded.">照片、縮圖與分析結果都留在這台手機上，不上傳。</li>
+        <li data-zh="沒有照片後端：我們沒有可供照片上傳的伺服器。" data-en="No photo backend: we operate no server that accepts photo uploads.">沒有照片後端：我們沒有可供照片上傳的伺服器。</li>
+        <li data-zh="不做人臉辨識，不建立人物檔案。" data-en="No face recognition, no people profiles.">不做人臉辨識，不建立人物檔案。</li>
+        <li data-zh="刪除前會逐張重算檔案雜湊；檔案在授權後被改動過，整批取消。" data-en="Before deletion each file is re-hashed; if anything changed after you authorised it, the whole batch is cancelled.">刪除前會逐張重算檔案雜湊；檔案在授權後被改動過，整批取消。</li>
+      </ul>
+      <p class="privacy-note" data-zh="我們不使用「完全沒有後端」「絕不上傳任何資料」這類無法兌現的絕對說法。" data-en="We avoid absolute claims such as &quot;no backend at all&quot; that cannot be kept.">我們不使用「完全沒有後端」「絕不上傳任何資料」這類無法兌現的絕對說法。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 data-zh="介面" data-en="Screens">介面</h2>
+      <p class="section-lead" data-zh="從分組、標記到最終確認，每一步都看得到會發生什麼。" data-en="From grouping to marking to the final confirm, every step shows what will happen.">從分組、標記到最終確認，每一步都看得到會發生什麼。</p>
+      <div class="shots">
+        <figure class="shot small"><img src="assets/queue.png" alt="待清理佇列" loading="lazy"><figcaption data-zh="待清理佇列：只是暫存，還沒刪" data-en="Pending removal: staged, nothing deleted yet">待清理佇列：只是暫存，還沒刪</figcaption></figure>
+        <figure class="shot small"><img src="assets/review.png" alt="按組最終確認" loading="lazy"><figcaption data-zh="最終確認：留的與要刪的並排" data-en="Final review: kept and to-remove side by side">最終確認：留的與要刪的並排</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="company" class="section alt">
+    <div class="wrap">
+      <h2 data-zh="公司資料" data-en="Company information">公司資料</h2>
+      <p class="section-lead" data-zh="BurstKeeper 由下列公司開發並營運。" data-en="BurstKeeper is developed and operated by the company below.">BurstKeeper 由下列公司開發並營運。</p>
+      <dl class="facts">
+        <dt data-zh="公司名稱" data-en="Company name">公司名稱</dt>
+        <dd>香港易企鏈存科技有限公司<br>Hong Kong Yiqiliancun Technology Limited</dd>
+        <dt data-zh="註冊地" data-en="Place of incorporation">註冊地</dt>
+        <dd data-zh="香港特別行政區" data-en="Hong Kong Special Administrative Region">香港特別行政區</dd>
+        <dt data-zh="成立日期" data-en="Date of incorporation">成立日期</dt>
+        <dd><time datetime="2026-09-24">2026 年 9 月 24 日</time></dd>
+        <dt data-zh="註冊地址" data-en="Registered office">註冊地址</dt>
+        <dd>RM 10, 13A/F., South Tower,<br>World Finance Center, Harbour City,<br>17 Canton Road, Tsim Sha Tsui, Hong Kong</dd>
+        <dt data-zh="業務性質" data-en="Nature of business">業務性質</dt>
+        <dd data-zh="軟件開發與資訊科技服務；流動應用程式研發。" data-en="Software development and IT services; mobile application development.">軟件開發與資訊科技服務；流動應用程式研發。</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="wrap">
+      <h2 data-zh="聯絡我們" data-en="Contact us">聯絡我們</h2>
+      <div class="contact-grid">
+        <div>
+          <h3 data-zh="通訊地址" data-en="Postal address">通訊地址</h3>
+          <p>Hong Kong Yiqiliancun Technology Limited<br>RM 10, 13A/F., South Tower,<br>World Finance Center, Harbour City,<br>17 Canton Road, Tsim Sha Tsui, Hong Kong</p>
+        </div>
+        <div>
+          <h3 data-zh="商務聯絡" data-en="Business enquiries">商務聯絡</h3>
+          <p>Email: <a href="mailto:zhaojf@139.com">zhaojf@139.com</a><br>Tel: <a href="tel:+85263944505">+852 63944505</a></p>
+          <p class="muted" data-zh="（聯絡方式待補，公開展示前請先確認可接通。）" data-en="(Contact details to be confirmed before publishing.)">（聯絡方式待補，公開展示前請先確認可接通。）</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="legal">
+      <p class="legal-head" data-zh="公司資料" data-en="Company details">公司資料</p>
+      <p>香港易企鏈存科技有限公司 · Hong Kong Yiqiliancun Technology Limited</p>
+      <p data-zh="公司編號（CR）：81289154" data-en="Company number (CR): 81289154">公司編號（CR）：81289154</p>
+      <p data-zh="商業登記證號（BR）：81289154-000-09-26-1" data-en="Business Registration (BR): 81289154-000-09-26-1">商業登記證號（BR）：81289154-000-09-26-1</p>
+      <p data-zh="註冊地址：RM 10, 13A/F., South Tower, World Finance Center, Harbour City, 17 Canton Road, Tsim Sha Tsui, Hong Kong" data-en="Registered office: RM 10, 13A/F., South Tower, World Finance Center, Harbour City, 17 Canton Road, Tsim Sha Tsui, Hong Kong">註冊地址：RM 10, 13A/F., South Tower, World Finance Center, Harbour City, 17 Canton Road, Tsim Sha Tsui, Hong Kong</p>
+      <p data-zh="聯絡：zhaojf@139.com · +852 63944505" data-en="Contact: zhaojf@139.com · +852 63944505">聯絡：zhaojf@139.com · +852 63944505</p>
+    </div>
+    <p class="footer-links">
+      <a href="privacy.html" data-zh="私隱政策" data-en="Privacy Policy">私隱政策</a>
+      <span aria-hidden="true">·</span>
+      <a href="#company" data-zh="公司資料" data-en="Company">公司資料</a>
+    </p>
+    <p class="muted">© <span id="year">2026</span> 香港易企鏈存科技有限公司 · Hong Kong Yiqiliancun Technology Limited</p>
+    <p class="muted" data-zh="BurstKeeper 為本公司開發之 Android 應用程式。本頁所述功能以實際發佈版本為準。" data-en="BurstKeeper is an Android application developed by the company above. Features described here are subject to the released version.">BurstKeeper 為本公司開發之 Android 應用程式。本頁所述功能以實際發佈版本為準。</p>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
